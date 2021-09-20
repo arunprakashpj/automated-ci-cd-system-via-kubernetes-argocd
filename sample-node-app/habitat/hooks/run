@@ -1,6 +1,0 @@
-#!/bin/sh
-
-set -eox
-
-exec 2>&1
-exec {{pkg.path}}/bin/habsuper
