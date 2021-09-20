@@ -1,0 +1,93 @@
+---
+apiVersion: apps/v1beta1
+kind: StatefulSet
+metadata:
+  labels:
+    habitat-cluster: example
+  name: habitat-supervisor
+spec:
+  serviceName: habitat-supervisor
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        habitat-cluster: example
+    spec:
+      containers:
+      - image: paulczar/habsuper
+        name: example
+        env:
+        - name: POD_IP
+          valueFrom:
+            fieldRef:
+              apiVersion: v1
+              fieldPath: status.podIP
+        - name: POD_NAMESPACE
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.namespace
+        args:
+          - --topology
+          - leader
+          - --peer
+          - habitat-supervisor.$(POD_NAMESPACE).svc.cluster.local
+          - --listen-gossip
+          - $(POD_IP)
+        ports:
+          - containerPort: 9638
+            protocol: UDP
+          - containerPort: 9638
+            protocol: TCP
+          - containerPort: 9631
+            protocol: TCP
+        resources:
+          limits:
+            cpu: 1
+            memory: 100Mi
+          requests:
+            cpu: 500m
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 9631
+          initialDelaySeconds: 5
+          periodSeconds: 5
+---
+apiVersion: v1
+# service.alpha.kubernetes.io/tolerate-unready-endpoints
+kind: Service
+metadata:
+  annotations:
+    service.alpha.kubernetes.io/tolerate-unready-endpoints: "true"
+  labels:
+    habitat-cluster: example
+  name: habitat-supervisor
+spec:
+  clusterIP: None
+  selector:
+    habitat-cluster: example
+  ports:
+    - name: gossip-udp
+      port: 9638
+      protocol: UDP
+      targetPort: 9638
+    - name: gossip-tcp
+      port: 9638
+      targetPort: 9638
+      protocol: TCP
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    habitat-cluster: example
+  name: habitat-supervisor-http
+spec:
+  type: NodePort
+  selector:
+    habitat-cluster: example
+  ports:
+    - name: http
+      port: 9631
+      protocol: TCP
+      targetPort: 9631

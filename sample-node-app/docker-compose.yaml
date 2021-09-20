@@ -1,0 +1,16 @@
+version: '3'
+services:
+  super:
+    image: paulczar/habsuper
+    ports: ["9631:9631"]
+    command: [--topology, leader]
+  client-1:
+      image: paulczar/habsuper
+      links: [super]
+      command: [--topology, leader, --peer, super]
+      depends_on: [super]
+  client-2:
+      image: paulczar/habsuper
+      links: [super]
+      command: [--topology, leader, --peer, super]
+      depends_on: [super]
