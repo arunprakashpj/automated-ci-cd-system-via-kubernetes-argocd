@@ -1,0 +1,32 @@
+apiVersion:  apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: webapp
+  name: webapp
+  namespace: sandbox
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webapp
+  template:
+    metadata:
+      labels:
+        app: webapp
+
+    spec:
+      containers:
+      - image: arunprakashpj/webapp:latest
+        imagePullPolicy: IfNotPresent
+        name: webapp
+        ports:
+          - containerPort: 3111
+            protocol: TCP
+        resources:
+          requests:
+            cpu: "250m"
+            memory: "64Mi"
+          limits:
+            cpu: "500m"
+            memory: "128Mi"
