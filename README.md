@@ -12,9 +12,9 @@
 
 ### Dependencies
 
-1. Install [NodeJs] (https://nodejs.org/en/download/)
-2. Install [Git] (https://git-scm.com/downloads)
-4. Install [Chef Habitat] (https://downloads.chef.io/tools/habitat)
+1. Install [Node Js](https://nodejs.org/en/download/)
+2. Install [Git](https://git-scm.com/downloads)
+4. Install [Chef Habitat](https://downloads.chef.io/tools/habitat)
 5. Install [Docker](https://docs.docker.com/get-docker/)
 6. Install [Vagrant](https://www.vagrantup.com/downloads)
 7. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
