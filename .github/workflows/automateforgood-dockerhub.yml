@@ -4,7 +4,7 @@ on:
     branches:
       - 'main'
 jobs: 
-  docker-img-build-techtrends:
+  docker-img-build-automateforgood:
     runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@v2
@@ -16,5 +16,5 @@ jobs:
           with:
             context: .
             push: true
-            tags: arunprakashpj/techtrends:latest, arunprakashpj/techtrends:${{ github.sha }}
+            tags: arunprakashpj/automateforgood:latest, arunprakashpj/automateforgood:${{ github.sha }}
 
