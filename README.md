@@ -1,4 +1,4 @@
-# AutomateForGood :  Automatically Package and Deploy the application  to kubernetes with CI/CD Pipelines using ChefHabitat, Docker, Github Actions, Kubernetes and ArgoCD
+# AutomateForGood :  Automatically package and deploy the application  to kubernetes with CI/CD Pipelines using ChefHabitat, Docker, Github Actions, Kubernetes and ArgoCD
 
 # Introduction
 
