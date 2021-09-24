@@ -1,4 +1,4 @@
-# AutomateForGood :  Export a docker image via Chef Habitat, enable CI via Github Actions & deploy the application to kubernetes enabling Continuous Delivery via ArgoCD
+# AutomateForGood :  Automatically Package and Deploy the application  to kubernetes with CI/CD Pipelines using ChefHabitat, Docker, Github Actions, Kubernetes and ArgoCD
 
 # Introduction
 
