@@ -2,27 +2,35 @@ apiVersion:  apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: webapp
-  name: webapp
+    app: automateforgood
+  name: automateforgood
   namespace: sandbox
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: webapp
+      app: automateforgood
   template:
     metadata:
       labels:
-        app: webapp
+        app: automateforgood
 
     spec:
       containers:
-      - image: arunprakashpj/webapp:1.0
+      - image: arunprakashpj/automateforgood:latest
         imagePullPolicy: IfNotPresent
-        name: webapp
+        name: automateforgood
         ports:
           - containerPort: 3111
             protocol: TCP
+        livenessProbe:
+          httpGet:
+              path: /healthinfo
+              port: 3111
+        readinessProbe:
+            httpGet:
+              path: /healthinfo
+              port: 3111
         resources:
           requests:
             cpu: "250m"
