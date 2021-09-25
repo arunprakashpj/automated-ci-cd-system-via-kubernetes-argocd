@@ -1,4 +1,4 @@
-![AutomateForGood - Package with Docker](https://github.com/arunprakashpj/AutomateForGood/workflows/AutomateForGood - Package with Docker/badge.svg)
+![AutomateForGood - Package with Docker](https://github.com/arunprakashpj/AutomateForGood/blob/main/.github/workflows/automateforgood-dockerhub.yml/badge.svg)
 # AutomateForGood :  Automatically package and deploy the application  to kubernetes with CI/CD Pipelines using ChefHabitat, Docker, Github Actions, Kubernetes and ArgoCD
 
 # Introduction
