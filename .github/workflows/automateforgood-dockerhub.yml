@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@v2
+        - name: "Install Chef Inspec"
+          run: curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -P inspec
         - uses: docker/login-action@v1
           with:
              username: ${{ secrets.DOCKERHUB_USERNAME }}
