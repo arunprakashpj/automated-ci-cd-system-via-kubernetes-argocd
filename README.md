@@ -41,3 +41,5 @@
      
 5. Continuous Delivery using ArgoCD
     - The aim of this step is to automatically deploy the application using ArgoCD, thus easy release to staging and production environment using the helm chart templates
+
+TBC
