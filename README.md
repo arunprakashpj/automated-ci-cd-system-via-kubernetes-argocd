@@ -5,7 +5,7 @@
 
 ## Project Plan
 
-* A link to a [Trello board](https://trello.com/e) for the project
+* A link to a [Trello board](https://trello.com/b/7u7h4bK2/automateforgood) for the project
 * A link to a [spreadsheet](https://docs.google.com/spreadsheets/) that includes the original and final project plan
 
 ### Getting Started
