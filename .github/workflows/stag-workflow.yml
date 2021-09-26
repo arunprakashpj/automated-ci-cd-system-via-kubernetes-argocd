@@ -7,7 +7,7 @@ on:
 
 jobs:
   test:
-    name: Rspec Test Action
+    name: Chef inSpec Test
     runs-on: ubuntu-18.04
     
       
@@ -24,5 +24,5 @@ jobs:
       uses: actions/setup-ruby@v1
       with:
         ruby-version: 2.6.x
-    - name: Run Rspec
+    - name: Run Chef inSpec
       run: inspec exec spec
