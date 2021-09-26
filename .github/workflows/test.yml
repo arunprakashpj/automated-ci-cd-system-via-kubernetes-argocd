@@ -26,3 +26,4 @@ jobs:
         ruby-version: 2.6.x
     - name: Run Rspec
       run: sudo inspec exec spec/controls/hello_spec.rb
+           echo "Exited with '$?'"
