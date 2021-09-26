@@ -29,4 +29,4 @@ jobs:
         gem install bundler
         bundle install --jobs 4 --retry 3
     - name: Run Rspec
-      run: chmod +x inspec exec bin/hello_spec
+      run: sudo inspec exec bin/hello_spec
