@@ -103,3 +103,9 @@ The Logs have been enabled for the project.
   
   ## Fig 8 : ArgoCD - Prod Environment
   ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/argocd-automatedforgood-prod.PNG)
+  
+  ### Step by Step Screenshots can be accessed  at [here](https://github.com/arunprakashpj/AutomateForGood/tree/main/screenshots)
+
+  ## Demo 
+
+  [![Demo](https://github.com/arunprakashpj/Deploying-CICD-Pipeline-in-Azure/blob/main/Screenshots/clickhere.png)](https://youtu.be/krERbEe88GA)
