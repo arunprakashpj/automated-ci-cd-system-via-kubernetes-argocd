@@ -24,10 +24,5 @@ jobs:
       uses: actions/setup-ruby@v1
       with:
         ruby-version: 2.6.x
-    - name: Bundle
-      run: |
-        gem install bundler:2.0.2
-        bundle install --jobs 4 --retry 3
-        bundle update --bundler
     - name: Run Rspec
       run: sudo inspec exec bin/hello_spec
