@@ -1,4 +1,4 @@
-name: Chef InSpec testcases
+name: Chef InSpec Testcases
 
 on: 
   push:
