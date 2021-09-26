@@ -8,19 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@v2
-        
-        - name: "Install Chef Inspec"
-          run: curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -P inspec
-
-        - name: "Run Infrastructure Tests"
-          run: inspec exec test/my-profile --input-file test/my-profile/attributes.yml --reporter=cli html:./report.html --show-progress -t gcp://
-
-        - uses: actions/upload-artifact@v2
-          if: always()
-          with:
-            name: test-report
-            path: ./report.html
-          
         - uses: docker/login-action@v1
           with:
              username: ${{ secrets.DOCKERHUB_USERNAME }}
