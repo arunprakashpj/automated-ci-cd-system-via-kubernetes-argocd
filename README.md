@@ -59,7 +59,6 @@ The Logs have been enabled for the project.
     - This [Github Actions](https://github.com/arunprakashpj/AutomateForGood/blob/main/.github/workflows/stag-workflow.yml) help us to trigger the test case execution whenever a new commit is made, thus enabling continuous integration.
     - Verify if the github actions execute the [Chef InSpec](https://docs.chef.io/inspec/install/) on every new commit, thus ensuring that nobody has broken the system.
  
-
 4. Deploy a Kubernates Cluster using K3s
      - Aim of this step is to create a declarative kubernetes manifest and release the application to the sandbox environment
      - Use Vagrant environment and create kubernetes cluster with [k3s](https://k3s.io/). [vagrant file](https://github.com/arunprakashpj/AutomateForGood/blob/main/Vagrantfile) is attached for reference
@@ -79,4 +78,28 @@ The Logs have been enabled for the project.
       - Login credentials can be retrieved using the steps [here](https://argoproj.github.io/argo-cd/getting_started/#4-login-using-the-cli)
       - Whenever you made a new commit, the application will be packed as a docker image and gets deployed after a quick test case verification.
 
-TBC
+  ###  Visualization of the entire process
+  
+  ## Fig 1 : Docker Image  
+  ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/docker-run-local.PNG)
+ 
+  ## Fig 2 : CI Github Actions to build/push docker image to hub
+  ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/ci-github-actions-docker-img.PNG)
+  
+  ## Fig 3 : CI Github Actions to automate the execution of test cases via chef inSpec 
+  ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/ci-github-actions-chef-inSpec.PNG)
+  
+  ## Fig 4 : CI DockerHub
+  ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/ci-dockerhub.PNG)
+  
+  ## Fig 5 : Kubernetes Manifests
+  ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/kubernetes-declarative-manifests.PNG)
+  
+  ## Fig 6 : ArgoCD Front Page
+  ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/argo-login-page.PNG)
+  
+  ## Fig 7 : ArgoCD -Staging Environment
+  ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/argocd-automatedforgood-stag.PNG)
+  
+  ## Fig 8 : ArgoCD - Prod Environment
+  ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/argocd-automatedforgood-prod.PNG)
