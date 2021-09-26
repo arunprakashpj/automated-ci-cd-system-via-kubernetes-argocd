@@ -17,3 +17,8 @@ control "tmp-1.0" do                        # A unique ID for this control
   end
 end
 
+
+describe yaml('test.yaml') do
+  its('name') { should eq 'foo' }
+  its(['array', 1]) { should eq 'one' }
+end
