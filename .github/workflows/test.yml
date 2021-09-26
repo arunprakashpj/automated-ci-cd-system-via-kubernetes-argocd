@@ -8,16 +8,21 @@ on:
 jobs:
   test:
     name: Rspec Test Action
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
+    
+      
     steps:
+    - name: Install Chef Inspec
+      run: |
+        wget https://packages.chef.io/files/stable/inspec/4.20.2/ubuntu/18.04/inspec_4.20.2-1_amd64.deb
+        sudo dpkg -i inspec_4.20.2-1_amd64.deb
+        rm inspec_4.20.2-1_amd64.deb
+        sudo inspec --chef-license=accept-silent
+        
     - uses: actions/checkout@master
     - name: Set up Ruby 2.6
       uses: actions/setup-ruby@v1
       with:
         ruby-version: 2.6.x
-    - name: Bundle
-      run: |
-        gem install bundler
-        bundle install --jobs 4 --retry 3
     - name: Run Rspec
-      run: bin/rspec
+      run: sudo inspec exec bin/hello_spec
