@@ -5,7 +5,7 @@ title "sample section"
 # you can also use plain tests
 describe file("/tmp") do
   it { should be_directory }
-#end
+end
 
 # you add controls here
 control "tmp-1.0" do                        # A unique ID for this control
