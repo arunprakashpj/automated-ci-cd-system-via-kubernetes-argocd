@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels:
+    app: automateforgood
+  name: automateforgood
+  namespace: {{ .Values.namespace.name }}
+spec:
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: {{ .Values.service.targetPort }}
+      protocol: {{ .Values.service.protocol }}
+  selector:
+    app: automateforgood
+  type: {{ .Values.service.type }}

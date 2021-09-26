@@ -1,0 +1,9 @@
+apiVersion: v1
+name: automateforgood
+description: Install techtrends project deployment manifests
+keywords:
+  - automateforgood
+version: 1.0.0
+maintainer:
+  - name: arunprakashpj
+    mail: arunprakashpj@gmail.com
