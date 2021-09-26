@@ -1,3 +1,3 @@
-# Example InSpec Profile
+# Test Execution with Chef InSpec
 
-This example shows the implementation of an InSpec profile.
+I have created this file to demo the usage of Chef Inspec
