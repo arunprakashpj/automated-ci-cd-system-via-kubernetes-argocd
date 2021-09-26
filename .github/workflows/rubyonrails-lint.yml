@@ -22,7 +22,11 @@ jobs:
         with:
           bundler-cache: true
           ruby-version: '2.6' # Version range or exact version of a Ruby version to use, using semvers version range syntax.
-      - name: Test
-        uses: skx/github-action-tester@master
-        with:
-         script: .github/run_test.sh
+      - name: Bundle
+        run: |
+         gem install bundler
+         bundle install --jobs 4 --retry 3
+      - name: Run Rspec
+        run: hello_spec.rb
+
+
