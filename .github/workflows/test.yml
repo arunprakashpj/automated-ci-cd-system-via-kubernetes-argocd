@@ -25,4 +25,4 @@ jobs:
       with:
         ruby-version: 2.6.x
     - name: Run Rspec
-      run: sudo inspec exec bin/hello_spec
+      run: sudo inspec exec spec/controls/hello_spec.rb
