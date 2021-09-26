@@ -1,4 +1,4 @@
-name: AutomateForGood - Package with Docker
+name: Package with Docker
 on: 
   push:
     branches:
