@@ -80,31 +80,47 @@ The Logs have been enabled for the project.
 
   ###  Visualization of the entire process
   
-  ## Fig 1 : Docker Image  
+  ## Fig 1 : Docker Run  
+  ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/docker-run-app.PNG)
+  
+  ## Fig 2 : Docker Run Debug
+  ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/docker-run-debug.PNG)
+  
+  ## Fig 3 : Accessing webapp from Docker Image  
   ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/docker-run-local.PNG)
  
-  ## Fig 2 : CI Github Actions to build/push docker image to hub
+  ## Fig 4 : CI Github Actions to build/push docker image to hub
   ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/ci-github-actions-docker-img.PNG)
   
-  ## Fig 3 : CI Github Actions to automate the execution of test cases via chef inSpec 
+  ## Fig 5 : CI Github Actions to automate the execution of test cases via chef inSpec 
   ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/ci-github-actions-chef-inSpec.PNG)
   
-  ## Fig 4 : CI DockerHub
+  ## Fig 6 : CI DockerHub
   ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/ci-dockerhub.PNG)
   
-  ## Fig 5 : Kubernetes Manifests
+  ## Fig 7 : Vagrant Login
+  ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/vagrant-login.PNG)
+  
+  ## Fig 8 : Kubernetes Pod Creation
+  ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/k8s-pods-created.PNG)
+  
+  ## Fig 9 : Kubernetes Manifests
   ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/kubernetes-declarative-manifests.PNG)
   
-  ## Fig 6 : ArgoCD Front Page
+  ## Fig 10 : ArgoCD Install and Start
+  ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/argocd-install.PNG)
+  ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/argocd-run.PNG)
+  
+  ## Fig 11 : ArgoCD Front Page
   ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/argo-login-page.PNG)
   
-  ## Fig 7 : ArgoCD -Staging Environment
+  ## Fig 12 : ArgoCD -Staging Environment
   ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/argocd-automatedforgood-stag.PNG)
   
-  ## Fig 8 : ArgoCD - Prod Environment
+  ## Fig 13 : ArgoCD - Prod Environment
   ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/argocd-automatedforgood-prod.PNG)
   
-  ### Step by Step Screenshots can be accessed  at [here](https://github.com/arunprakashpj/AutomateForGood/tree/main/screenshots)
+  ## Fig 14 : Screenshots of all steps available at [here](https://github.com/arunprakashpj/AutomateForGood/tree/main/screenshots)
   
   ### Future Improvement
 
