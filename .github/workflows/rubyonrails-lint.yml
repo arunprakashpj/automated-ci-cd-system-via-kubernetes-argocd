@@ -25,4 +25,4 @@ jobs:
       - name: Test
         uses: skx/github-action-tester@master
         with:
-         script: .github/automateforgood/practice/hello_spec.rb
+         script: .github/run_test.sh
