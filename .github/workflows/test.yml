@@ -26,7 +26,7 @@ jobs:
         ruby-version: 2.6.x
     - name: Bundle
       run: |
-        gem install bundler
+        gem install bundler:2.0.2
         bundle install --jobs 4 --retry 3
     - name: Run Rspec
       run: sudo inspec exec bin/hello_spec
