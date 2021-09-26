@@ -9,6 +9,12 @@ jobs:
   test:
     name: Rspec Test Action
     runs-on: ubuntu-latest
+    
+       # Setup environment
+    env:
+     CHEF_LICENSE: accept-silent
+      
+      
     steps:
     - uses: actions/checkout@master
     - name: Set up Ruby 2.6
