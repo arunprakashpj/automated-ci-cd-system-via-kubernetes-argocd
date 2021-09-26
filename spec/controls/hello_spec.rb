@@ -3,8 +3,8 @@
 title "sample section"
 
 # you can also use plain tests
-#describe file("/tmp") do
-#  it { should be_directory }
+describe file("/tmp") do
+  it { should be_directory }
 #end
 
 # you add controls here
