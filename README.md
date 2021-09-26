@@ -1,6 +1,12 @@
+![AutomateForGood - Package with Docker](https://github.com/arunprakashpj/AutomateForGood/actions/workflows/automateforgood-dockerhub.yml/badge.svg)
 # AutomateForGood :  Automatically package and deploy the application  to kubernetes with CI/CD Pipelines using ChefHabitat, Docker, Github Actions, Kubernetes and ArgoCD
 
-# Introduction
+# Overview
+
+## Project Plan
+
+* A link to a [Trello board](https://trello.com/b/7u7h4bK2/automateforgood) for the project
+* A link to a [spreadsheet](https://docs.google.com/spreadsheets/d/14OYodH_OnKtR6owFtAEXYrLhqiKph24Uz_l4ORmVS_I/edit?usp=sharing) that includes the original and final project plan
 
 ### Getting Started
 
@@ -35,3 +41,5 @@
      
 5. Continuous Delivery using ArgoCD
     - The aim of this step is to automatically deploy the application using ArgoCD, thus easy release to staging and production environment using the helm chart templates
+
+TBC

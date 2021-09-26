@@ -35,3 +35,5 @@ $ HAB_LICENSE=accept-no-persist docker-compose up -d
 $ curl localhost:8000/cgi-bin/hello-world
 $ docker-compose down
 ```
+
+This application originated from the repo [learn-chef/hab-two-tier](https://github.com/learn-chef/hab-two-tier)
