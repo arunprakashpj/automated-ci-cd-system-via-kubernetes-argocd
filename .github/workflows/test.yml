@@ -25,4 +25,4 @@ jobs:
       with:
         ruby-version: 2.6.x
     - name: Run Rspec
-      run: sudo inspec exec spec
+      run: inspec exec spec
