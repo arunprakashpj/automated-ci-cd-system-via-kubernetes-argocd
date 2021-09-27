@@ -1,10 +1,12 @@
 ![AutomateForGood - Package with Docker](https://github.com/arunprakashpj/AutomateForGood/actions/workflows/dev-workflow.yml/badge.svg)
 ![Chef InSpec Testcases](https://github.com/arunprakashpj/AutomateForGood/actions/workflows/stag-workflow.yml/badge.svg)
-# AutomateForGood :  Automatically package and deploy the application to kubernetes with CI/CD Pipelines
+# AutomateForGood :  eAuto - Automatically package and deploy the application to kubernetes with CI/CD Pipelines
 
 # Overview
 
-A sample webapp called Automateforgood is used to exhibit the devop operations. The application is packaged with the help of Docker. Github Actions are used to enable continuous integration, thus automating the build and pushing the docker image to dockerhub. Github Actions also used to demo the application of Chef inSpec in automating testcases as a part of continuous integration. Kubernetes cluster is provisioned using K3s in a vagrant box where the application is deployed. Kubernetes Manifest template is made using Helm Charts and input configuration files for Staging and prod environment are made. ArgoCD is used to enable Continuous Delivery on each deployment at Staging/Prod Environment.
+In this project eAuto, A sample web app called Automateforgood is used to exhibit the DevOps practices. Whenever a new commit is made to the GitHub repo, Github Actions automatically triggers an action to package the application as  Docker Image and push it to the Docker Hub enabling continuous integration. Another Github Actions trigger the system to execute Chef inSpec test cases as a part of continuous integration. 
+
+The Kubernetes cluster is provisioned using K3s in a vagrant box where the application can be deployed. Once the docker image is available in the docker hub,  it is automatically deployed into Kubernetes. Kubernetes Manifest template is made using Helm Charts and input configuration files for Staging and prod environment are made. ArgoCD is used to enable Continuous Delivery on each deployment at the Staging/Prod Environment.
 
 ## Project Plan
 
