@@ -122,7 +122,11 @@ The Logs have been enabled for the project.
   
   ## Fig 14 : Screenshots of all steps available [here](https://github.com/arunprakashpj/AutomateForGood/tree/main/screenshots)
   
-  ### DevOps principles & practices followed
+  ### DevOps practices followed
+  1. Continuous Integration using Github Actions.
+  2. Automated Testing via Chef inSpec & Github Actions.
+  3. Configuration of Kubernetes clusters using Helm Charts.
+  4. Continous Delivery using ArgoCD.
  
   ### How it meets the goal "Automate For Good"
   
