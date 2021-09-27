@@ -6,7 +6,7 @@
 
 In this project eAuto, A sample web app called Automateforgood is used to exhibit the DevOps practices. Whenever a new commit is made to the GitHub repo, Github Actions automatically triggers an action to package the application as  Docker Image and push it to the Docker Hub enabling continuous integration. Another Github Actions trigger the system to execute Chef inSpec test cases as a part of continuous integration. 
 
-The Kubernetes cluster is provisioned using K3s in a vagrant box where the application can be deployed. Once the docker image is available in the docker hub,  it is automatically deployed into Kubernetes. Kubernetes Manifest template is made using Helm Charts and input configuration files for Staging and prod environment are made. ArgoCD is used to enable Continuous Delivery on each deployment at the Staging/Prod Environment.
+The Kubernetes cluster is provisioned using K3s in a vagrant box where the application can be deployed. Once the docker image is available in the docker hub,  it is automatically deployed into Kubernetes. Kubernetes Manifest template is made using Helm Charts and input configuration files for Staging and prod environment are created. ArgoCD is used to enable Continuous Delivery on each deployment at the Staging/Prod Environment.
 
 ## Project Plan
 
