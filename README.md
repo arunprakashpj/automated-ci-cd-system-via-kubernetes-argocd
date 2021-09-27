@@ -120,9 +120,14 @@ The Logs have been enabled for the project.
   ## Fig 13 : ArgoCD - Prod Environment
   ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/argocd-automatedforgood-prod.PNG)
   
-  ## Fig 14 : Screenshots of all steps available at [here](https://github.com/arunprakashpj/AutomateForGood/tree/main/screenshots)
+  ## Fig 14 : Screenshots of all steps available [here](https://github.com/arunprakashpj/AutomateForGood/tree/main/screenshots)
   
-  ### Future Improvement
+  ### What next
+       - Explore the application of Prometheus and Grafana. Learn more about Observability. 
+       - Explore Chef Habitat. Already I built a sample application following offcial chef tutorials and exported it as docker image. You can see the execution here. I am looking forward to know more about the benifits of Chef Habitat
+       - List Goes On...
+        
+        
 
   ## Demo 
 
