@@ -122,6 +122,12 @@ The Logs have been enabled for the project.
   
   ## Fig 14 : Screenshots of all steps available [here](https://github.com/arunprakashpj/AutomateForGood/tree/main/screenshots)
   
+  ### DevOps principles & practices followed
+ 
+  ### How it meets the goal "Automate For Good"
+  
+  ### Business use case viability & Scalability
+  
   ### What next
        - Explore the application of Prometheus and Grafana. Learn more about Observability. 
        - Explore Chef Habitat. Already I built a sample application following offcial chef tutorials and exported it as docker image. You can see the execution here. I am looking forward to know more about the benifits of Chef Habitat
