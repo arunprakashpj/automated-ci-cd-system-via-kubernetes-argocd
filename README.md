@@ -131,7 +131,8 @@ The Logs have been enabled for the project.
   ### What next
   1. Explore the application of Prometheus and Grafana. Learn more about Observability. 
   2. Explore Chef Habitat. Already I built a sample application following offcial chef tutorials and exported it as docker image. You can see the execution here. I am looking forward to know more about the benifits of Chef Habitat
-  3. List Goes On...
+  3. Build CI/CD Pipelines in AWS and explore the world of Cloud Ops
+  4. List Goes On...
         
         
 
