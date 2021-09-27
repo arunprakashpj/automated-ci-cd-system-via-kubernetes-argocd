@@ -129,8 +129,16 @@ The Logs have been enabled for the project.
   4. Continous Delivery using ArgoCD.
  
   ### How it meets the goal "Automate For Good"
+  1. Code quality will be increased when CI/CD is in-place. Because Whenever code commit is made, automatically lint check will run to evaluate the code style. 
+  2. Delivery and Deployment will be faster as there is almost nil review time involved. Whenever new changes made, automatically docker image is generated and deployed into the kubernetes cluster. No maual review involved anywhere. 
+  3. The docker image is created with every commit. This ensures consistency with code and excution environment.
+  4. Automation removes the possibilities for human errors. Once you commit the code, the build, deploy, test and delivery are completely automated in this project thus no possibility for human errors.
+  5. Fault isolation is very easy. Even for a single line commit, the new docker build and deployment is triggered. Also test cases will be executed via Chef inSpec thus fault isolation is spot on.
+  6. No more head ache with frequent update/maintanence. This project has two environments integrated. One is staging and other is prod. Easy maintanance and swap of images can be done between stag and prod environment.
+  7. This automation project make the delivery faster, consistant and accurate. 
   
   ### Business use case viability & Scalability
+  This project targets the cloud native environment where CI/CD assitance will be a big boosting factor. Kubernetes is used in the project to enable scalability. Also Helm charts are used in this project to make the kubernetes configuration even more simple.
   
   ### What next
   1. Explore the application of Prometheus and Grafana. Learn more about Observability. 
