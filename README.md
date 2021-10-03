@@ -81,6 +81,7 @@ The Logs have been enabled for the project.
       - Whenever you made a new commit, the application will be packed as a docker image and gets deployed after a quick test case verification.
       - 
 6. Slack Support
+     - The Issues, Pulls, commits,release, deployments releated to this project will be notified to the user via the slack channel. You can follow [this](https://slack.com/intl/en-se/help/articles/232289568-GitHub-for-Slack) to setup the integration
 
   ###  Visualization of the entire process
   
