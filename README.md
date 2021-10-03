@@ -79,9 +79,30 @@ The Logs have been enabled for the project.
       - Access the argoCD UI at https://192.168.50.4 : 300008 or http://192.168.50.4:30007
       - Login credentials can be retrieved using the steps [here](https://argoproj.github.io/argo-cd/getting_started/#4-login-using-the-cli)
       - Whenever you made a new commit, the application will be packed as a docker image and gets deployed after a quick test case verification.
-      - 
+      
 6. Slack Support
-     - The Issues, Pulls, commits,release, deployments releated to this project will be notified to the user via the slack channel. You can follow [this](https://slack.com/intl/en-se/help/articles/232289568-GitHub-for-Slack) to setup the integration
+     - The Issues, Pulls, commits,release, deployments releated to this project will be notified to the user via the slack channel.
+
+``` /github subscribe owner/repo [feature] ```
+``` /github unsubscribe owner/repo [feature] ```
+
+Following features are enabled by default  and can be disabled with the `/github unsubscribe owner/repo [feature]` command:
+
+- `issues` - Opened or closed issues
+- `pulls` - New or merged pull requests, as well as draft pull requests marked "Ready for Review"
+- `commits` - New commits on the default branch (usually `master`)
+- `releases` - Published releases
+- `deployments` - Deployment review notifications and Deployment status updates.
+
+Following features  are disabled by default, and can be enabled with the `/github subscribe owner/repo [feature]` command:
+
+- `reviews` - Pull request reviews
+- `comments` - New comments on issues and pull requests
+- `branches` - Created or deleted branches
+- `commits:*` - All commits pushed to any branch
+- `+label:"your label"` - Filter issues, pull-requests and comments based on their labels.
+
+Know more about the integration from [here](https://slack.com/intl/en-se/help/articles/232289568-GitHub-for-Slack) to setup the integration
 
   ###  Visualization of the entire process
   
