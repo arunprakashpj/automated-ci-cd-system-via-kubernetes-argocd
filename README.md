@@ -79,6 +79,8 @@ The Logs have been enabled for the project.
       - Access the argoCD UI at https://192.168.50.4 : 300008 or http://192.168.50.4:30007
       - Login credentials can be retrieved using the steps [here](https://argoproj.github.io/argo-cd/getting_started/#4-login-using-the-cli)
       - Whenever you made a new commit, the application will be packed as a docker image and gets deployed after a quick test case verification.
+      - 
+6. Slack Support
 
   ###  Visualization of the entire process
   
