@@ -1,5 +1,70 @@
 ![AutomateForGood - Package with Docker](https://github.com/arunprakashpj/AutomateForGood/actions/workflows/dev-workflow.yml/badge.svg)
 ![Chef InSpec Testcases](https://github.com/arunprakashpj/AutomateForGood/actions/workflows/stag-workflow.yml/badge.svg)
+
+
+<h2 align="center">easyAuto</h2>
+<p align="center">Efficient CI/CD Automation System</p>
+
+<p align="center">
+  <a href="https://nodejs.org/en/download/">
+    <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=whites" alt="Version">
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/badge/python-E10098?style=for-the-badge&logo=python&logoColor=white" alt="Code Version">
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/badge/ruby-E10029?style=for-the-badge&logo=ruby&logoColor=white" alt="Code Version">
+  </a>
+    
+  <a href="">
+    <img src="https://img.shields.io/badge/-docker-%238D6748?style=for-the-badge&logo=docker&logoColor=white" alt="Code Version">
+  </a>
+    
+    
+  <a href="">
+    <img src="https://img.shields.io/badge/chefInspec-1572B6?style=for-the-badge&logo=chefInspec&logoColor=white" alt="Code Version">
+  </a>
+   <a href="">
+    <img src="https://img.shields.io/badge/-chefHabitat-%23Clojure?style=for-the-badge&logo=chef&logoColor=white" alt="Code Version">
+  </a>
+
+  <a href="">
+    <img src="https://img.shields.io/badge/-vagrant-B1361E?style=for-the-badge&logo=vagrant&logoColor=white" alt="Code Version">
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/badge/-kubernetes-372213?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Code Version">
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/badge/-helm-372213?style=for-the-badge&logo=helm&logoColor=white" alt="Code Version">
+  </a>
+    
+   <a href="">
+    <img src="https://img.shields.io/badge/-argoCD-6933FF?style=for-the-badge&logo=argoCD&logoColor=white" alt="Code Version">
+  </a>
+     <a href="">
+    <img src="https://img.shields.io/badge/-graphana-6933FF?style=for-the-badge&logo=graphana&logoColor=white" alt="Code Version">
+  </a>
+         <a href="">
+    <img src="https://img.shields.io/badge/-prometheus-6933FF?style=for-the-badge&logo=prometheus&logoColor=white" alt="Code Version">
+  </a>
+     <a href="">
+    <img src="https://img.shields.io/badge/-jaegar-6933FF?style=for-the-badge&logo=eslint&logoColor=white" alt="Code Version">
+  </a>
+
+  <a href="">
+    <img src="https://img.shields.io/badge/-slack-6933FF?style=for-the-badge&logo=slack&logoColor=white" alt="Code Version">
+  </a>
+ <a href="">
+    <img src="https://img.shields.io/badge/-Eslint-6933FF?style=for-the-badge&logo=eslint&logoColor=white" alt="Code Version">
+  </a>
+
+  
+  </a>
+</p>
+<br>
+
+
+
 # AutomateForGood :  eAuto - Automatically package and deploy the application to kubernetes with CI/CD Pipelines
 
 # Overview
