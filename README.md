@@ -55,9 +55,9 @@
 
 # Overview
 
-In this project Brew Ops, A sample web app called Automateforgood is used to exhibit the DevOps practices. Whenever a new commit is made to the GitHub repo, Github Actions automatically triggers an action to package the application as  Docker Image and push it to the Docker Hub enabling continuous integration. Another Github Actions trigger the system to execute Chef inSpec test cases as a part of continuous integration. 
+In this project Brew Ops, A sample web app called Automateforgood is used to exhibit the DevOps practices. Whenever a new commit is made to the GitHub repo, [Github Actions](https://docs.github.com/en/actions) automatically triggers an [action](https://github.com/arunprakashpj/AutomateForGood/blob/main/.github/workflows/dockerbuild-workflow.yml) to package the application as  [docker](https://docs.docker.com/get-docker/) Image and push it to the [Docker hub](https://hub.docker.com/) enabling [continuous integration](https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration). Another [Github Actions](https://github.com/arunprakashpj/AutomateForGood/blob/main/.github/workflows/chef-Inspec-workflow.yml) trigger the system to execute [Chef InSpec](https://docs.chef.io/inspec/install/) test cases as a part of [continuous integration](https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration). 
 
-The Kubernetes cluster is provisioned using K3s in a vagrant box where the application can be deployed. Once the docker image is available in the docker hub,  it is automatically deployed into Kubernetes. Kubernetes Manifest template is made using Helm Charts and input configuration files for Staging and prod environment are created. ArgoCD is used to enable Continuous Delivery on each deployment at the Staging/Prod Environment.
+The [Kubernetes](https://kubernetes.io/) cluster is provisioned using K3s in a [vagrant box](https://www.vagrantup.com/downloads) where the application can be deployed. Once the [docker](https://docs.docker.com/get-docker/) image is available in the [Docker hub](https://hub.docker.com/),  it is automatically deployed into [kubernetes](https://kubernetes.io/). Kubernetes Manifest template is made using [Helm](https://helm.sh/) Charts and input configuration files for Staging and prod environment are created. [ArgoCD](https://argoproj.github.io/argo-cd/getting_started/#1-install-argo-cd) is used to enable [Continuous Delivery](https://en.wikipedia.org/wiki/Continuous_delivery) on each deployment at the Staging/Prod Environment. In the end, I have also experimented creating [docker](https://docs.docker.com/get-docker/) image by exporting the artifacts created by [Chef Habitat](https://downloads.chef.io/tools/habitat).
 
 ## Project Plan
 
@@ -82,8 +82,10 @@ The Kubernetes cluster is provisioned using K3s in a vagrant box where the appli
 6. Install [Chef InSpec](https://docs.chef.io/inspec/install/)
 7. Install [Docker](https://docs.docker.com/get-docker/)
 8. Install [Vagrant](https://www.vagrantup.com/downloads)
-9. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-10. Install [ArgoCD](https://argoproj.github.io/argo-cd/getting_started/#1-install-argo-cd)
+9. Install [Kubernetes](https://kubernetes.io/)
+10. Install [Helm](https://helm.sh/)
+11. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+12.Install [ArgoCD](https://argoproj.github.io/argo-cd/getting_started/#1-install-argo-cd)
 
 ### Health End Points
 
