@@ -2,7 +2,7 @@
 ![Chef InSpec Testcases](https://github.com/arunprakashpj/AutomateForGood/actions/workflows/chef-Inspec-workflow.yml/badge.svg)
 
 
-<h2 align="center">Brew Ops</h2>
+<h2 align="center">BrewOps</h2>
 <p align="center">Efficient CI/CD Automation System</p>
 
 <p align="center">
@@ -10,14 +10,14 @@
     <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=whites" alt="Version">
   </a>
   <a href="">
-    <img src="https://img.shields.io/badge/python-E10098?style=for-the-badge&logo=python&logoColor=white" alt="Code Version">
+    <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Code Version">
   </a>
   <a href="">
-    <img src="https://img.shields.io/badge/ruby-E10029?style=for-the-badge&logo=ruby&logoColor=white" alt="Code Version">
+    <img src="https://img.shields.io/badge/ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white" alt="Code Version">
   </a>
     
   <a href="">
-    <img src="https://img.shields.io/badge/-docker-%238D6748?style=for-the-badge&logo=docker&logoColor=white" alt="Code Version">
+    <img src="https://img.shields.io/badge/-Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" alt="Code Version">
   </a>
     
     
@@ -29,17 +29,17 @@
   </a>
 
   <a href="">
-    <img src="https://img.shields.io/badge/-vagrant-B1361E?style=for-the-badge&logo=vagrant&logoColor=white" alt="Code Version">
+    <img src="https://img.shields.io/badge/-vagrant-02569B?style=for-the-badge&logo=vagrant&logoColor=white" alt="Code Version">
   </a>
   <a href="">
-    <img src="https://img.shields.io/badge/-kubernetes-372213?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Code Version">
+    <img src="https://img.shields.io/badge/-kubernetes-326ce5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Code Version">
   </a>
   <a href="">
-    <img src="https://img.shields.io/badge/-helm-372213?style=for-the-badge&logo=helm&logoColor=white" alt="Code Version">
+    <img src="https://img.shields.io/badge/-helm-3655FF?style=for-the-badge&logo=helm&logoColor=white" alt="Code Version">
   </a>
     
    <a href="">
-    <img src="https://img.shields.io/badge/-argoCD-6933FF?style=for-the-badge&logo=argoCD&logoColor=white" alt="Code Version">
+    <img src="https://img.shields.io/badge/-argoCD-E34F26?style=for-the-badge&logo=argoCD&logoColor=white" alt="Code Version">
   </a>
   <a href="">
     <img src="https://img.shields.io/badge/-slack-6933FF?style=for-the-badge&logo=slack&logoColor=white" alt="Code Version">
@@ -51,13 +51,13 @@
 
 
 
-# AutomateForGood :  Brew Ops - Automatically package and deploy the application to kubernetes with CI/CD Pipelines
+# AutomateForGood :  BrewOps - Automatically package and deploy the application to kubernetes with CI/CD Pipelines
 
 # Overview
 
-In this project Brew Ops, A sample web app called Automateforgood is used to exhibit the DevOps practices. Whenever a new commit is made to the GitHub repo, Github Actions automatically triggers an action to package the application as  Docker Image and push it to the Docker Hub enabling continuous integration. Another Github Actions trigger the system to execute Chef inSpec test cases as a part of continuous integration. 
+In this project BrewOps, A sample web app called Automateforgood is used to exhibit the DevOps practices. Whenever a new commit is made to the GitHub repo, [Github Actions](https://docs.github.com/en/actions) automatically triggers an [action](https://github.com/arunprakashpj/AutomateForGood/blob/main/.github/workflows/dockerbuild-workflow.yml) to package the application as  [docker](https://docs.docker.com/get-docker/) Image and push it to the [Docker hub](https://hub.docker.com/) enabling [continuous integration](https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration). Another [Github Actions](https://github.com/arunprakashpj/AutomateForGood/blob/main/.github/workflows/chef-Inspec-workflow.yml) trigger the system to execute [Chef InSpec](https://docs.chef.io/inspec/install/) test cases as a part of [continuous integration](https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration). 
 
-The Kubernetes cluster is provisioned using K3s in a vagrant box where the application can be deployed. Once the docker image is available in the docker hub,  it is automatically deployed into Kubernetes. Kubernetes Manifest template is made using Helm Charts and input configuration files for Staging and prod environment are created. ArgoCD is used to enable Continuous Delivery on each deployment at the Staging/Prod Environment.
+The [Kubernetes](https://kubernetes.io/) cluster is provisioned using K3s in a [vagrant box](https://www.vagrantup.com/downloads) where the application can be deployed. Once the [docker](https://docs.docker.com/get-docker/) image is available in the [Docker hub](https://hub.docker.com/),  it is automatically deployed into [kubernetes](https://kubernetes.io/). Kubernetes Manifest template is made using [Helm](https://helm.sh/) Charts and input configuration files for Staging and prod environment are created. [ArgoCD](https://argoproj.github.io/argo-cd/getting_started/#1-install-argo-cd) is used to enable [Continuous Delivery](https://en.wikipedia.org/wiki/Continuous_delivery) on each deployment at the Staging/Prod Environment. In the end, I have also experimented creating [docker](https://docs.docker.com/get-docker/) image by exporting the artifacts created by [Chef Habitat](https://downloads.chef.io/tools/habitat). Its quiet handy when it comes to cross platform builds.
 
 ## Project Plan
 
@@ -82,8 +82,10 @@ The Kubernetes cluster is provisioned using K3s in a vagrant box where the appli
 6. Install [Chef InSpec](https://docs.chef.io/inspec/install/)
 7. Install [Docker](https://docs.docker.com/get-docker/)
 8. Install [Vagrant](https://www.vagrantup.com/downloads)
-9. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-10. Install [ArgoCD](https://argoproj.github.io/argo-cd/getting_started/#1-install-argo-cd)
+9. Install [Kubernetes](https://kubernetes.io/)
+10. Install [Helm](https://helm.sh/)
+11. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+12. Install [ArgoCD](https://argoproj.github.io/argo-cd/getting_started/#1-install-argo-cd)
 
 ### Health End Points
 
@@ -226,12 +228,12 @@ Know more about the integration from [here](https://slack.com/intl/en-se/help/ar
    ### Extended Use cases of Chef Habitat
    1. [Chef Habitat](https://downloads.chef.io/tools/habitat) Artificats
       - Major advantage of [Chef Habitat](https://downloads.chef.io/tools/habitat) is, we can deploy and run our habitat app in different infrastructure environments like bare metal, VM, containers, and PaaS.
-      - [Chef Habitat](https://downloads.chef.io/tools/habitat) Artificats (.hart) can be easily exported to docker, tarball, Apache Mesos, Cloud Foundary
+      - [Chef Habitat](https://downloads.chef.io/tools/habitat) Artificats (.hart) supports cross platform builds, thus we can be easily export the app to docker, tarball, Apache Mesos and Cloud Foundary.
       - I gave a try on this, You can check the experiment [here]
   
   
   ### How it meets the goal "Automate For Good"
-  1. Code quality will be increased when CI/CD is in-place. Because Whenever code commit is made, automatically lint check will run to evaluate the code style. 
+  1. Code quality will be increased when CI/CD is in-place. 
   2. Delivery and Deployment will be faster as there is almost nil review time involved. Whenever new changes made, automatically docker image is generated and deployed into the kubernetes cluster. No maual review involved anywhere. 
   3. The docker image is created with every commit. This ensures consistency with code and excution environment.
   4. Automation removes the possibilities for human errors. Once you commit the code, the build, deploy, test and delivery are completely automated in this project thus no possibility for human errors.
@@ -243,10 +245,11 @@ Know more about the integration from [here](https://slack.com/intl/en-se/help/ar
   This project targets the cloud native environment where CI/CD assitance will be a big boosting factor. Kubernetes is used in the project to enable scalability. Also Helm charts are used in this project to make the kubernetes configuration even more simple. Chef Inspec is an interesting addition to enable infrastructure configuration testing/ security complaince testing.
   
   ### What next
-  1. Explore the application of Prometheus and Grafana. Learn more about Observability. 
-  2. Explore Chef Habitat. Already I built a sample application following offcial chef tutorials and exported it as docker image. You can see the execution here. I am looking forward to know more about the benifits of Chef Habitat
-  3. Build CI/CD Pipelines in AWS and explore the world of Cloud Ops
-  4. List Goes On...
+  1. Explore the application of [Prometheus](https://prometheus.io/) for monitering and [Grafana](https://grafana.com/) for Observability. 
+  2. Explore [polaris](https://github.com/FairwindsOps/polaris) to ensure that Kubernetes pods and controllers are configured properly utlizing best practices.
+  3. Explore [Chef Habitat](https://downloads.chef.io/tools/habitat). Already I built a sample application following offcial chef tutorials and exported it as docker image. You can see the execution here. I am looking forward to know more about the benifits of [Chef Habitat](https://downloads.chef.io/tools/habitat).
+  4. Build CI/CD Pipelines in AWS/Azure and explore the world of Cloud Ops. I am consistantly self learning and you can find my CI/CD pipeline deployment over Azure project [here](https://github.com/arunprakashpj/Deploying-CICD-Pipeline-in-Azure). Looking forward to keep the momentum.
+  5. List Goes On...
         
         
 
