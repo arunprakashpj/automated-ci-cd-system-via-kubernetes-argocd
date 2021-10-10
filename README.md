@@ -85,7 +85,7 @@ The [Kubernetes](https://kubernetes.io/) cluster is provisioned using K3s in a [
 9. Install [Kubernetes](https://kubernetes.io/)
 10. Install [Helm](https://helm.sh/)
 11. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-12.Install [ArgoCD](https://argoproj.github.io/argo-cd/getting_started/#1-install-argo-cd)
+12. Install [ArgoCD](https://argoproj.github.io/argo-cd/getting_started/#1-install-argo-cd)
 
 ### Health End Points
 
