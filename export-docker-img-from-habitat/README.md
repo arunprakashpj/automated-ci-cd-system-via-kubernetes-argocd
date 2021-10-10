@@ -35,5 +35,10 @@ $ HAB_LICENSE=accept-no-persist docker-compose up -d
 $ curl localhost:8000/cgi-bin/hello-world
 $ docker-compose down
 ```
+  ###  Visualization of the entire process
+  
+  ## Fig 1 : Build Webapp
+  ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/export-docker-img-from-habitat/screenshots/habitatbuild.PNG)
+
 
 This application originated from the repo [learn-chef/hab-two-tier](https://github.com/learn-chef/hab-two-tier)
