@@ -10,14 +10,14 @@
     <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=whites" alt="Version">
   </a>
   <a href="">
-    <img src="https://img.shields.io/badge/python-E10098?style=for-the-badge&logo=python&logoColor=white" alt="Code Version">
+    <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Code Version">
   </a>
   <a href="">
-    <img src="https://img.shields.io/badge/ruby-E10029?style=for-the-badge&logo=ruby&logoColor=white" alt="Code Version">
+    <img src="https://img.shields.io/badge/ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white" alt="Code Version">
   </a>
     
   <a href="">
-    <img src="https://img.shields.io/badge/-docker-%238D6748?style=for-the-badge&logo=docker&logoColor=white" alt="Code Version">
+    <img src="https://img.shields.io/badge/-Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" alt="Code Version">
   </a>
     
     
@@ -29,17 +29,17 @@
   </a>
 
   <a href="">
-    <img src="https://img.shields.io/badge/-vagrant-B1361E?style=for-the-badge&logo=vagrant&logoColor=white" alt="Code Version">
+    <img src="https://img.shields.io/badge/-vagrant-02569B?style=for-the-badge&logo=vagrant&logoColor=white" alt="Code Version">
   </a>
   <a href="">
-    <img src="https://img.shields.io/badge/-kubernetes-372213?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Code Version">
+    <img src="https://img.shields.io/badge/-kubernetes-326ce5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Code Version">
   </a>
   <a href="">
-    <img src="https://img.shields.io/badge/-helm-372213?style=for-the-badge&logo=helm&logoColor=white" alt="Code Version">
+    <img src="https://img.shields.io/badge/-helm-3655FF?style=for-the-badge&logo=helm&logoColor=white" alt="Code Version">
   </a>
     
    <a href="">
-    <img src="https://img.shields.io/badge/-argoCD-6933FF?style=for-the-badge&logo=argoCD&logoColor=white" alt="Code Version">
+    <img src="https://img.shields.io/badge/-argoCD-E34F26?style=for-the-badge&logo=argoCD&logoColor=white" alt="Code Version">
   </a>
   <a href="">
     <img src="https://img.shields.io/badge/-slack-6933FF?style=for-the-badge&logo=slack&logoColor=white" alt="Code Version">
