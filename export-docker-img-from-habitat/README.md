@@ -1,31 +1,16 @@
-# hab-two-tier
+# About
 
-This Habitat project illustrates a basic Apache web application (`webapp`) and HAProxy load balancer (`haproxy`).
+The project hab-two-tier is a sample project that intends to build a basic Apache web application (`webapp`) and HAProxy load balancer (`haproxy`). Post my hackathon project, I have explored the application of chef habitat by learning from the offcial site. I have followed some offcial tutorials from [chef website](https://learn.chef.io/courses/course-v1:chef+Habitat101+Perpetual/course/) and I was able to build a docker image which i have manually exported to my docker hub. I undersatnd that docker habitat helps us in making cross platform builds, thus exploring further utilizing the scafolding given by official chef website.  This sample scafolding to tryout chef habitat originated from the  repo [learn-chef/hab-two-tier](https://github.com/learn-chef/hab-two-tier)
 
-The Docker Compose file brings up HAProxy and two load-balanced webapp instances.
 
 ## Build and Export the packages (inside the studio)
 
 ```
 $ hab studio enter
 $ build webapp
-# Grab the built artifact, i.e. "Artifact: /src/results/learn-chef-webapp-0.2.0-20180105200724-x86_64-linux.hart"
-$ hab pkg export docker results/learn-chef-webapp-0.2.0-20180105200724-x86_64-linux.hart
+$ hab pkg export docker results/arunprakashpj-haproxy-1.6.11-20210919225910-x86_64-linux.hart
 $ build haproxy
-# Grab the built artifact, i.e. "Artifact: /src/results/learn-chef-haproxy-1.6.11-20180105200724-x86_64-linux.hart"
-$ hab pkg export docker results/learn-chef-haproxy-1.6.11-20180105200724-x86_64-linux.hart
-```
-
-## Build and Export the packages (outside the studio)
-
-```
-$ hab pkg build webapp
-# Grab the built artifact, i.e. "Artifact: results/learn-chef-webapp-0.2.0-20180105200724-x86_64-linux.hart"
-$ hab pkg export docker results/learn-chef-webapp-0.2.0-20180105200724-x86_64-linux.hart
-
-$ hab pkg build haproxy
-# Grab the built artifact, i.e. "Artifact: results/learn-chef-haproxy-1.6.11-20180105200724-x86_64-linux.hart"
-$ hab pkg export docker results/learn-chef-haproxy-1.6.11-20180105200724-x86_64-linux.hart
+$ hab pkg export docker results/arunprakashpj-webapp-0.2.0-20210919225930-x86_64-linux.hart
 ```
 
 ## Run
@@ -64,7 +49,3 @@ $ docker-compose down
     
  ## Exporting the docker image to the dockerhub
   ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/export-docker-img-from-habitat/screenshots/webapp_in_dockerhub.PNG)
-
-
- 
-This hab-two-tier sample  originated from the repo [learn-chef/hab-two-tier](https://github.com/learn-chef/hab-two-tier)
