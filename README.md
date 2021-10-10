@@ -1,5 +1,5 @@
-![AutomateForGood - Package with Docker](https://github.com/arunprakashpj/AutomateForGood/actions/workflows/dev-workflow.yml/badge.svg)
-![Chef InSpec Testcases](https://github.com/arunprakashpj/AutomateForGood/actions/workflows/stag-workflow.yml/badge.svg)
+![AutomateForGood - Package with Docker](https://github.com/arunprakashpj/AutomateForGood/actions/workflows/dockerbuild-workflow.yml/badge.svg)
+![Chef InSpec Testcases](https://github.com/arunprakashpj/AutomateForGood/actions/workflows/chef-Inspec-workflow.yml/badge.svg)
 
 
 <h2 align="center">easyAuto</h2>
@@ -41,23 +41,9 @@
    <a href="">
     <img src="https://img.shields.io/badge/-argoCD-6933FF?style=for-the-badge&logo=argoCD&logoColor=white" alt="Code Version">
   </a>
-     <a href="">
-    <img src="https://img.shields.io/badge/-graphana-6933FF?style=for-the-badge&logo=graphana&logoColor=white" alt="Code Version">
-  </a>
-         <a href="">
-    <img src="https://img.shields.io/badge/-prometheus-6933FF?style=for-the-badge&logo=prometheus&logoColor=white" alt="Code Version">
-  </a>
-     <a href="">
-    <img src="https://img.shields.io/badge/-jaegar-6933FF?style=for-the-badge&logo=eslint&logoColor=white" alt="Code Version">
-  </a>
-
   <a href="">
     <img src="https://img.shields.io/badge/-slack-6933FF?style=for-the-badge&logo=slack&logoColor=white" alt="Code Version">
   </a>
- <a href="">
-    <img src="https://img.shields.io/badge/-Eslint-6933FF?style=for-the-badge&logo=eslint&logoColor=white" alt="Code Version">
-  </a>
-
   
   </a>
 </p>
@@ -227,7 +213,7 @@ Know more about the integration from [here](https://slack.com/intl/en-se/help/ar
         - The implementation shows a sample usecase to give a essence of the software. Other potential use case are detailed below
   2. [Chef Habitat](https://downloads.chef.io/tools/habitat) has been experimented as well to create artificats and later exported as docker image.
        - Post completion of the project, I experimented with the [Chef Habitat](https://downloads.chef.io/tools/habitat) to explore how it can be employed in artificat creation and how that can be exported as docker image. You can find my experiment here.
-       - The implementation shows a sample usecase to give a essence of the software. Other potential use case are detailed below
+       - The implementation shows a sample usecase to give an essence of the software. This is much more than this use case and the same is detailed below
 
   ### Extended Use cases of Chef Inspec
    1.  Enable a testcase to ensure that web server is only listening on well-secured ports
@@ -238,9 +224,9 @@ Know more about the integration from [here](https://slack.com/intl/en-se/help/ar
    6.  More usecases [here](https://github.com/inspec/inspec/)
        
    ### Extended Use cases of Chef Habitat
-   1. Chef Habitat Artificats
-      - Major advantage of Chef habitat is, we can deploy and run our habitat app in different infrastructure environments like bare metal, VM, containers, and PaaS.
-      - Chef Habitat Artificats (.hart) can be easily exported to docker, tarball, Apache Mesos, Cloud Foundary
+   1. [Chef Habitat](https://downloads.chef.io/tools/habitat) Artificats
+      - Major advantage of [Chef Habitat](https://downloads.chef.io/tools/habitat) is, we can deploy and run our habitat app in different infrastructure environments like bare metal, VM, containers, and PaaS.
+      - [Chef Habitat](https://downloads.chef.io/tools/habitat) Artificats (.hart) can be easily exported to docker, tarball, Apache Mesos, Cloud Foundary
       - I gave a try on this, You can check the experiment [here]
   
   
