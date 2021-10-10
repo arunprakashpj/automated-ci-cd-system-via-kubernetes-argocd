@@ -2,7 +2,7 @@
 ![Chef InSpec Testcases](https://github.com/arunprakashpj/AutomateForGood/actions/workflows/chef-Inspec-workflow.yml/badge.svg)
 
 
-<h2 align="center">Brew Ops</h2>
+<h2 align="center">BrewOps</h2>
 <p align="center">Efficient CI/CD Automation System</p>
 
 <p align="center">
@@ -51,11 +51,11 @@
 
 
 
-# AutomateForGood :  Brew Ops - Automatically package and deploy the application to kubernetes with CI/CD Pipelines
+# AutomateForGood :  BrewOps - Automatically package and deploy the application to kubernetes with CI/CD Pipelines
 
 # Overview
 
-In this project Brew Ops, A sample web app called Automateforgood is used to exhibit the DevOps practices. Whenever a new commit is made to the GitHub repo, [Github Actions](https://docs.github.com/en/actions) automatically triggers an [action](https://github.com/arunprakashpj/AutomateForGood/blob/main/.github/workflows/dockerbuild-workflow.yml) to package the application as  [docker](https://docs.docker.com/get-docker/) Image and push it to the [Docker hub](https://hub.docker.com/) enabling [continuous integration](https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration). Another [Github Actions](https://github.com/arunprakashpj/AutomateForGood/blob/main/.github/workflows/chef-Inspec-workflow.yml) trigger the system to execute [Chef InSpec](https://docs.chef.io/inspec/install/) test cases as a part of [continuous integration](https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration). 
+In this project BrewOps, A sample web app called Automateforgood is used to exhibit the DevOps practices. Whenever a new commit is made to the GitHub repo, [Github Actions](https://docs.github.com/en/actions) automatically triggers an [action](https://github.com/arunprakashpj/AutomateForGood/blob/main/.github/workflows/dockerbuild-workflow.yml) to package the application as  [docker](https://docs.docker.com/get-docker/) Image and push it to the [Docker hub](https://hub.docker.com/) enabling [continuous integration](https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration). Another [Github Actions](https://github.com/arunprakashpj/AutomateForGood/blob/main/.github/workflows/chef-Inspec-workflow.yml) trigger the system to execute [Chef InSpec](https://docs.chef.io/inspec/install/) test cases as a part of [continuous integration](https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration). 
 
 The [Kubernetes](https://kubernetes.io/) cluster is provisioned using K3s in a [vagrant box](https://www.vagrantup.com/downloads) where the application can be deployed. Once the [docker](https://docs.docker.com/get-docker/) image is available in the [Docker hub](https://hub.docker.com/),  it is automatically deployed into [kubernetes](https://kubernetes.io/). Kubernetes Manifest template is made using [Helm](https://helm.sh/) Charts and input configuration files for Staging and prod environment are created. [ArgoCD](https://argoproj.github.io/argo-cd/getting_started/#1-install-argo-cd) is used to enable [Continuous Delivery](https://en.wikipedia.org/wiki/Continuous_delivery) on each deployment at the Staging/Prod Environment. In the end, I have also experimented creating [docker](https://docs.docker.com/get-docker/) image by exporting the artifacts created by [Chef Habitat](https://downloads.chef.io/tools/habitat).
 
