@@ -121,7 +121,7 @@ The Logs have been enabled for the project.
     - To automate the login into Docker Hub, the github actions use [Github Tokens](https://www.docker.com/blog/docker-hub-new-personal-access-tokens/) and [Github Encrypted Secrets](https://docs.github.com/en/actions/reference/encrypted-secrets).
     - Create and verify if the github actions execute on every new commit, thus pushing the latest docker image to the docker hub.
 
-3. Continuous Integration with Github Actions to automate the execution of test cases via chef inSpec 
+3. Continuous Integration with Github Actions to automate the execution of test cases via [Chef InSpec](https://docs.chef.io/inspec/install/) 
     - Aim of this step is to automate the testcase execution using [Chef InSpec](https://docs.chef.io/inspec/install/) and enable continuous integration via [Github Actions](https://github.com/arunprakashpj/AutomateForGood/blob/main/.github/workflows/stag-workflow.yml)
     - This [Github Actions](https://github.com/arunprakashpj/AutomateForGood/blob/main/.github/workflows/stag-workflow.yml) help us to trigger the test case execution whenever a new commit is made, thus enabling continuous integration.
     - Verify if the github actions execute the [Chef InSpec](https://docs.chef.io/inspec/install/) on every new commit, thus ensuring that nobody has broken the system.
@@ -218,7 +218,28 @@ Know more about the integration from [here](https://slack.com/intl/en-se/help/ar
   2. Automated Testing via Chef inSpec & Github Actions.
   3. Configuration of Kubernetes clusters using Helm Charts.
   4. Continous Delivery using ArgoCD.
- 
+
+
+  ### Implementation and Use of Chef Software
+  1. [Chef InSpec](https://docs.chef.io/inspec/install/) has been explored and employed in the automation of testcases.
+        - [Chef InSpec](https://docs.chef.io/inspec/install/) has been integrated as a part of Continuous Integration via Github Actions.
+        - The [Chef InSpec](https://docs.chef.io/inspec/install/) runs during new commit and chek if the kubernetes yaml contains all the mandatory keywords. That is, It helps in configuration verification.
+        - The implementation shows a sample usecase to give a essence of the software. Other potential use case are detailed below
+  2. [Chef Habitat](https://downloads.chef.io/tools/habitat) has been experimented as well to create artificats and later exported as docker image.
+       - Post completion of the project, I experimented with the [Chef Habitat](https://downloads.chef.io/tools/habitat) to explore how it can be employed in artificat creation and how that can be exported as docker image. You can find my experiment here.
+       - The implementation shows a sample usecase to give a essence of the software. Other potential use case are detailed below
+
+  ### Extended Use cases of Chef Inspec
+   1.  Enable a testcase to ensure that web server is only listening on well-secured ports
+   2.  Run test on remote host on SSH or  WinRM
+   3.  Execute test on docker container
+   4.  Execute a profile targetting AWS/Azure Environment
+   5.  Make configuration verification like we did for Kubernetes 
+   6.  More usecases [here] (https://github.com/inspec/inspec/)
+       
+  
+  
+  
   ### How it meets the goal "Automate For Good"
   1. Code quality will be increased when CI/CD is in-place. Because Whenever code commit is made, automatically lint check will run to evaluate the code style. 
   2. Delivery and Deployment will be faster as there is almost nil review time involved. Whenever new changes made, automatically docker image is generated and deployed into the kubernetes cluster. No maual review involved anywhere. 
