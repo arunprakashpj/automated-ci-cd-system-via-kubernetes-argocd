@@ -238,7 +238,10 @@ Know more about the integration from [here](https://slack.com/intl/en-se/help/ar
    6.  More usecases [here](https://github.com/inspec/inspec/)
        
    ### Extended Use cases of Chef Habitat
-   1. 
+   1. Chef Habitat Artificats
+      - Major advantage of Chef habitat is, we can deploy and run our habitat app in different infrastructure environments like bare metal, VM, containers, and PaaS.
+      - Chef Habitat Artificats (.hart) can be easily exported to docker, tarball, Apache Mesos, Cloud Foundary
+      - I gave a try on this, You can check the experiment [here]
   
   
   ### How it meets the goal "Automate For Good"
