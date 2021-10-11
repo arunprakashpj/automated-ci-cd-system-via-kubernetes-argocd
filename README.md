@@ -2,7 +2,7 @@
 ![Chef InSpec Testcases](https://github.com/arunprakashpj/AutomateForGood/actions/workflows/chef-Inspec-workflow.yml/badge.svg)
 
 
-<h2 align="center">BrewOps.</h2>
+<h2 align="center">BrewOps</h2>
 <p align="center">Efficient CI/CD Automation System</p>
 
 <p align="center">
