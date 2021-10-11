@@ -131,6 +131,8 @@ The Logs have been enabled for the project.
       - Execute ``kubectl create namespace argocd`` to create the namespace.
       - Execute  `` kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/core-install.yaml``.
       - Execute ``kubectl apply -f argocd-nodeport.yaml``. Nodeport Service Yaml files can be found [here](https://github.com/arunprakashpj/AutomateForGood/tree/main/argocd).
+      - Execute ``kubectl apply -f helm-automateforgood-staging.yaml``
+      - Execute ``kubectl apply -f helm-automateforgood-prod.yaml``
       - Execute ``curl -sSL -o /usr/local/bin/argocd https://github.com/argoproj/argo-rollouts/releases/latest/download/kubectl-argo-rollouts-linux-amd64``
       - Execute ``chmod +x /usr/local/bin/argocd``
       - Access the argoCD UI at https://192.168.50.4 : 300008 or http://192.168.50.4:30007
