@@ -119,7 +119,10 @@ The Logs have been enabled for the project.
      - Use Vagrant environment and create kubernetes cluster with [k3s](https://k3s.io/). [vagrant file](https://github.com/arunprakashpj/AutomateForGood/blob/main/Vagrantfile) is attached for reference
      - To create a vagrant box, navigate to this [location](https://github.com/arunprakashpj/AutomateForGood/blob/main/Vagrantfile)  where vagrantfile is placed, Use the command ``vagrant up`` , then ``vagrant ssh``.
      - You can find the kubernetes declartive manifests [here](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/kubernetes-declarative-manifests.PNG).
-     - Use the command ``kubectl apply -f yaml_file_name`` to deploy the application in k3s cluster.
+     - Use the command ``kubectl apply -f yaml_file_name`` to deploy the application in k3s cluster. The commands I used aregiven below.
+     - Execute ```kubectl apply -f namespace.yaml``.
+     - Execute ```kubectl apply -f service.yaml``
+     - Execute ```kubectl apply -f deploy.yaml`` 
 
 4. Helm Charts Templating
      - The aim of this step is to parameterize the kubernetes manifests.
@@ -131,8 +134,8 @@ The Logs have been enabled for the project.
       - Execute ``kubectl create namespace argocd`` to create the namespace.
       - Execute  `` kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/core-install.yaml``.
       - Execute ``kubectl apply -f argocd-nodeport.yaml``. Nodeport Service Yaml files can be found [here](https://github.com/arunprakashpj/AutomateForGood/tree/main/argocd).
-      - Execute ``kubectl apply -f helm-automateforgood-staging.yaml``
-      - Execute ``kubectl apply -f helm-automateforgood-prod.yaml``
+      - Execute ``kubectl apply -f helm-automateforgood-staging.yaml``. You can find the yaml file [here](https://github.com/arunprakashpj/AutomateForGood/blob/main/argocd/helm-automateforgood-staging.yaml).
+      - Execute ``kubectl apply -f helm-automateforgood-prod.yaml``. You can find the yaml file [here](https://github.com/arunprakashpj/AutomateForGood/blob/main/argocd/helm-automateforgood-prod.yaml)
       - Execute ``curl -sSL -o /usr/local/bin/argocd https://github.com/argoproj/argo-rollouts/releases/latest/download/kubectl-argo-rollouts-linux-amd64``
       - Execute ``chmod +x /usr/local/bin/argocd``
       - Access the argoCD UI at https://192.168.50.4 : 300008 or http://192.168.50.4:30007
