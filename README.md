@@ -82,7 +82,7 @@ The [Kubernetes](https://kubernetes.io/) cluster is provisioned using K3s in a [
 6. Install [Chef InSpec](https://docs.chef.io/inspec/install/)
 7. Install [Docker](https://docs.docker.com/get-docker/)
 8. Install [Vagrant](https://www.vagrantup.com/downloads)
-9. Install [Kubernetes](https://kubernetes.io/)
+9. Install [Kubernetes](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 10. Install [Helm](https://helm.sh/)
 11. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 12. Install [ArgoCD](https://argoproj.github.io/argo-cd/getting_started/#1-install-argo-cd)
