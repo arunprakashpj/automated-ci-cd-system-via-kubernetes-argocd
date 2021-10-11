@@ -129,6 +129,8 @@ The Logs have been enabled for the project.
 5. Continuous Delivery using ArgoCD
       - The aim of this step is to automatically deploy the application using ArgoCD, thus easy release to staging and production environment using the helm chart templates
       - Nodeport Service Yaml files can be found [here](https://github.com/arunprakashpj/AutomateForGood/tree/main/argocd)
+      - Execute ``kubectl create namespace argocd`` to create the namespace
+      - Execute  `` kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/core-install.yaml``
       - Access the argoCD UI at https://192.168.50.4 : 300008 or http://192.168.50.4:30007
       - Login credentials can be retrieved using the steps [here](https://argoproj.github.io/argo-cd/getting_started/#4-login-using-the-cli)
       - Whenever you made a new commit, the application will be packed as a docker image and gets deployed after a quick test case verification.
