@@ -120,9 +120,9 @@ The Logs have been enabled for the project.
      - To create a vagrant box, navigate to this [location](https://github.com/arunprakashpj/AutomateForGood/blob/main/Vagrantfile)  where vagrantfile is placed, Use the command ``vagrant up`` , then ``vagrant ssh``.
      - You can find the kubernetes declartive manifests [here](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/kubernetes-declarative-manifests.PNG).
      - Use the command ``kubectl apply -f yaml_file_name`` to deploy the application in k3s cluster. The commands I used aregiven below.
-     - Execute ```kubectl apply -f namespace.yaml``.
-     - Execute ```kubectl apply -f service.yaml``
-     - Execute ```kubectl apply -f deploy.yaml`` 
+     - Execute ``kubectl apply -f namespace.yaml``.
+     - Execute ``kubectl apply -f service.yaml``
+     - Execute ``kubectl apply -f deploy.yaml`` 
 
 4. Helm Charts Templating
      - The aim of this step is to parameterize the kubernetes manifests.
