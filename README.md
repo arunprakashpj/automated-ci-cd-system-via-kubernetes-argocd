@@ -225,7 +225,7 @@ Know more about the integration from [here](https://slack.com/intl/en-se/help/ar
         - The [Chef InSpec](https://docs.chef.io/inspec/install/) runs during new commit and chek if the kubernetes yaml contains all the mandatory keywords. That is, It helps in configuration verification.
         - The implementation shows a sample usecase to give a essence of the software. Other potential use case are detailed below
   2. [Chef Habitat](https://downloads.chef.io/tools/habitat) has been experimented as well to create artificats and later exported as docker image.
-       - Post completion of the project, I experimented with the [Chef Habitat](https://downloads.chef.io/tools/habitat) to explore how it can be employed in artifact creation and how that can be exported as docker image. You can find my experiment here.
+       - Post completion of the project, I experimented with the [Chef Habitat](https://downloads.chef.io/tools/habitat) to explore how it can be employed in artifact creation and how that can be exported as docker image. You can find my experiment [here](https://github.com/arunprakashpj/AutomateForGood/tree/main/export-docker-img-from-habitat).
        - The implementation shows a sample usecase to give an essence of the software. This is much more than this use case and the same is detailed below
 
   ### Extended Use cases of Chef Inspec
@@ -239,7 +239,7 @@ Know more about the integration from [here](https://slack.com/intl/en-se/help/ar
    ### Extended Use cases of Chef Habitat
    1. [Chef Habitat](https://downloads.chef.io/tools/habitat) Artificats
       - Major advantage of [Chef Habitat](https://downloads.chef.io/tools/habitat) is, we can deploy and run our habitat app in different infrastructure environments like bare metal, VM, containers, and PaaS.
-      - [Chef Habitat](https://downloads.chef.io/tools/habitat) Artificats (.hart) supports cross platform builds, thus we can be easily export the app to docker, tarball, Apache Mesos and Cloud Foundary.
+      - [Chef Habitat](https://downloads.chef.io/tools/habitat) Artifacts (.hart) supports cross platform builds, thus we can be easily export the app to docker, tarball, Apache Mesos and Cloud Foundary.
       - I gave a try on this, You can check the experiment [here](https://github.com/arunprakashpj/AutomateForGood/tree/main/export-docker-img-from-habitat).
   
   
