@@ -267,4 +267,4 @@ Know more about the integration from [here](https://slack.com/intl/en-se/help/ar
        
   ## Demo 
 
-  [![Demo](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/youtube-logo.gif)](https://www.youtube.com/watch?v=lktBOE1MJ7Q)
+  [![Demo](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/youtube-logo.gif)](https://www.youtube.com/watch?v=CCCo4_UYkI4)
