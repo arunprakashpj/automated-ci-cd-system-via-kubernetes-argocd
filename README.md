@@ -57,7 +57,7 @@
 
 In this project BrewOps, A sample web app called Automateforgood is used to exhibit the DevOps practices. Whenever a new commit is made to the GitHub repo, [Github Actions](https://docs.github.com/en/actions) automatically triggers an [action](https://github.com/arunprakashpj/AutomateForGood/blob/main/.github/workflows/dockerbuild-workflow.yml) to package the application as  [docker](https://docs.docker.com/get-docker/) Image and push it to the [Docker hub](https://hub.docker.com/) enabling [continuous integration](https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration). Another [Github Actions](https://github.com/arunprakashpj/AutomateForGood/blob/main/.github/workflows/chef-Inspec-workflow.yml) trigger the system to execute [Chef InSpec](https://docs.chef.io/inspec/install/) test cases as a part of [continuous integration](https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration). 
 
-The [Kubernetes](https://kubernetes.io/) cluster is provisioned using K3s in a [vagrant box](https://www.vagrantup.com/downloads) where the application can be deployed. Once the [docker](https://docs.docker.com/get-docker/) image is available in the [Docker hub](https://hub.docker.com/),  it is automatically deployed into [kubernetes](https://kubernetes.io/). Kubernetes Manifest template is made using [Helm](https://helm.sh/) Charts and input configuration files for Staging and prod environment are created. [ArgoCD](https://argoproj.github.io/argo-cd/getting_started/#1-install-argo-cd) is used to enable [Continuous Delivery](https://en.wikipedia.org/wiki/Continuous_delivery) on each deployment at the Staging/Prod Environment. In the end, I have also experimented creating [docker](https://docs.docker.com/get-docker/) image by exporting the artifacts created by [Chef Habitat](https://downloads.chef.io/tools/habitat). Its quiet handy when it comes to cross platform builds.
+The [Kubernetes](https://kubernetes.io/) cluster is provisioned using K3s in a [vagrant box](https://www.vagrantup.com/downloads) where the application can be deployed. Once the [docker](https://docs.docker.com/get-docker/) image is available in the [Docker hub](https://hub.docker.com/),  it is automatically deployed into [kubernetes](https://kubernetes.io/). Kubernetes Manifest template is made using [Helm](https://helm.sh/) Charts and input configuration files for Staging and prod environment are created. [ArgoCD](https://argoproj.github.io/argo-cd/getting_started/#1-install-argo-cd) is used to enable [Continuous Delivery](https://en.wikipedia.org/wiki/Continuous_delivery) on each deployment at the Staging/Prod Environment. In the end, I have also experimented creating [docker](https://docs.docker.com/get-docker/) image by exporting the artifacts created by [Chef Habitat](https://downloads.chef.io/tools/habitat). Its quiet handy when it comes to cross platform builds. Chef Habitat project experimentation can be accessed [here](https://github.com/arunprakashpj/AutomateForGood/tree/main/export-docker-img-from-habitat).
 
 ## Project Plan
 
@@ -82,7 +82,7 @@ The [Kubernetes](https://kubernetes.io/) cluster is provisioned using K3s in a [
 6. Install [Chef InSpec](https://docs.chef.io/inspec/install/)
 7. Install [Docker](https://docs.docker.com/get-docker/)
 8. Install [Vagrant](https://www.vagrantup.com/downloads)
-9. Install [Kubernetes](https://kubernetes.io/)
+9. Install [Kubernetes](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 10. Install [Helm](https://helm.sh/)
 11. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 12. Install [ArgoCD](https://argoproj.github.io/argo-cd/getting_started/#1-install-argo-cd)
@@ -119,7 +119,10 @@ The Logs have been enabled for the project.
      - Use Vagrant environment and create kubernetes cluster with [k3s](https://k3s.io/). [vagrant file](https://github.com/arunprakashpj/AutomateForGood/blob/main/Vagrantfile) is attached for reference
      - To create a vagrant box, navigate to this [location](https://github.com/arunprakashpj/AutomateForGood/blob/main/Vagrantfile)  where vagrantfile is placed, Use the command ``vagrant up`` , then ``vagrant ssh``.
      - You can find the kubernetes declartive manifests [here](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/kubernetes-declarative-manifests.PNG).
-     - Use the command ``kubectl apply -f yaml_file_name`` to deploy the application in k3s cluster.
+     - Use the command ``kubectl apply -f yaml_file_name`` to deploy the application in k3s cluster. The commands I used aregiven below.
+     - Execute ``kubectl apply -f namespace.yaml``.
+     - Execute ``kubectl apply -f service.yaml``
+     - Execute ``kubectl apply -f deploy.yaml`` 
 
 4. Helm Charts Templating
      - The aim of this step is to parameterize the kubernetes manifests.
@@ -128,7 +131,13 @@ The Logs have been enabled for the project.
      
 5. Continuous Delivery using ArgoCD
       - The aim of this step is to automatically deploy the application using ArgoCD, thus easy release to staging and production environment using the helm chart templates
-      - Nodeport Service Yaml files can be found [here](https://github.com/arunprakashpj/AutomateForGood/tree/main/argocd)
+      - Execute ``kubectl create namespace argocd`` to create the namespace.
+      - Execute  `` kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/core-install.yaml``.
+      - Execute ``kubectl apply -f argocd-nodeport.yaml``. Nodeport Service Yaml files can be found [here](https://github.com/arunprakashpj/AutomateForGood/tree/main/argocd).
+      - Execute ``kubectl apply -f helm-automateforgood-staging.yaml``. You can find the yaml file [here](https://github.com/arunprakashpj/AutomateForGood/blob/main/argocd/helm-automateforgood-staging.yaml).
+      - Execute ``kubectl apply -f helm-automateforgood-prod.yaml``. You can find the yaml file [here](https://github.com/arunprakashpj/AutomateForGood/blob/main/argocd/helm-automateforgood-prod.yaml)
+      - Execute ``curl -sSL -o /usr/local/bin/argocd https://github.com/argoproj/argo-rollouts/releases/latest/download/kubectl-argo-rollouts-linux-amd64``
+      - Execute ``chmod +x /usr/local/bin/argocd``
       - Access the argoCD UI at https://192.168.50.4 : 300008 or http://192.168.50.4:30007
       - Login credentials can be retrieved using the steps [here](https://argoproj.github.io/argo-cd/getting_started/#4-login-using-the-cli)
       - Whenever you made a new commit, the application will be packed as a docker image and gets deployed after a quick test case verification.
@@ -214,7 +223,7 @@ Know more about the integration from [here](https://slack.com/intl/en-se/help/ar
         - The [Chef InSpec](https://docs.chef.io/inspec/install/) runs during new commit and chek if the kubernetes yaml contains all the mandatory keywords. That is, It helps in configuration verification.
         - The implementation shows a sample usecase to give a essence of the software. Other potential use case are detailed below
   2. [Chef Habitat](https://downloads.chef.io/tools/habitat) has been experimented as well to create artificats and later exported as docker image.
-       - Post completion of the project, I experimented with the [Chef Habitat](https://downloads.chef.io/tools/habitat) to explore how it can be employed in artificat creation and how that can be exported as docker image. You can find my experiment here.
+       - Post completion of the project, I experimented with the [Chef Habitat](https://downloads.chef.io/tools/habitat) to explore how it can be employed in artifact creation and how that can be exported as docker image. You can find my experiment here.
        - The implementation shows a sample usecase to give an essence of the software. This is much more than this use case and the same is detailed below
 
   ### Extended Use cases of Chef Inspec
@@ -223,13 +232,13 @@ Know more about the integration from [here](https://slack.com/intl/en-se/help/ar
    3.  Execute test on docker container
    4.  Execute a profile targetting AWS/Azure Environment
    5.  Make configuration verification like we did for Kubernetes 
-   6.  More usecases [here](https://github.com/inspec/inspec/)
+   6.  More usecases [here](https://github.com/inspec/inspec/).
        
    ### Extended Use cases of Chef Habitat
    1. [Chef Habitat](https://downloads.chef.io/tools/habitat) Artificats
       - Major advantage of [Chef Habitat](https://downloads.chef.io/tools/habitat) is, we can deploy and run our habitat app in different infrastructure environments like bare metal, VM, containers, and PaaS.
       - [Chef Habitat](https://downloads.chef.io/tools/habitat) Artificats (.hart) supports cross platform builds, thus we can be easily export the app to docker, tarball, Apache Mesos and Cloud Foundary.
-      - I gave a try on this, You can check the experiment [here]
+      - I gave a try on this, You can check the experiment [here](https://github.com/arunprakashpj/AutomateForGood/tree/main/export-docker-img-from-habitat).
   
   
   ### How it meets the goal "Automate For Good"
@@ -247,12 +256,10 @@ Know more about the integration from [here](https://slack.com/intl/en-se/help/ar
   ### What next
   1. Explore the application of [Prometheus](https://prometheus.io/) for monitering and [Grafana](https://grafana.com/) for Observability. 
   2. Explore [polaris](https://github.com/FairwindsOps/polaris) to ensure that Kubernetes pods and controllers are configured properly utlizing best practices.
-  3. Explore [Chef Habitat](https://downloads.chef.io/tools/habitat). Already I built a sample application following offcial chef tutorials and exported it as docker image. You can see the execution here. I am looking forward to know more about the benifits of [Chef Habitat](https://downloads.chef.io/tools/habitat).
+  3. Explore [Chef Habitat](https://downloads.chef.io/tools/habitat). Already I built a sample application following offcial chef tutorials and exported it as docker image. You can see the execution [here](https://github.com/arunprakashpj/AutomateForGood/tree/main/export-docker-img-from-habitat). I am looking forward to know more about the benifits of [Chef Habitat](https://downloads.chef.io/tools/habitat).
   4. Build CI/CD Pipelines in AWS/Azure and explore the world of Cloud Ops. I am consistantly self learning and you can find my CI/CD pipeline deployment over Azure project [here](https://github.com/arunprakashpj/Deploying-CICD-Pipeline-in-Azure). Looking forward to keep the momentum.
   5. List Goes On...
-        
-        
-
+       
   ## Demo 
 
-  [![Demo](https://github.com/arunprakashpj/Deploying-CICD-Pipeline-in-Azure/blob/main/Screenshots/clickhere.png)](https://youtube.com)
+  [![Demo](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/youtube-logo.gif)](https://www.youtube.com/watch?v=lktBOE1MJ7Q)

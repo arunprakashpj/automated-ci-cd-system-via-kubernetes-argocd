@@ -45,7 +45,7 @@ $ docker-compose down
   ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/export-docker-img-from-habitat/screenshots/apprunning.PNG)
   
   ## Fig 7 : Running Curl to see the result
-    ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/export-docker-img-from-habitat/screenshots/curl_result.PNG)
+  ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/export-docker-img-from-habitat/screenshots/curl_result.PNG)
     
  ## Exporting the docker image to the dockerhub
   ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/export-docker-img-from-habitat/screenshots/webapp_in_dockerhub.PNG)
