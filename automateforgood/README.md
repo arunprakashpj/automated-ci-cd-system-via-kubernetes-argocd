@@ -1,6 +1,6 @@
 # AutomateForGood Web Application
 
-This is a Flask application that lists the latest articles within the DevOps Space.
+This is a simple flask application that lists the latest articles within the DevOps Space.
 
 ## Run 
 
