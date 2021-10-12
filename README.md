@@ -258,7 +258,7 @@ Know more about the integration from [here](https://slack.com/intl/en-se/help/ar
   2. Explore [polaris](https://github.com/FairwindsOps/polaris) to ensure that Kubernetes pods and controllers are configured properly utlizing best practices.
   3. Explore [Chef Habitat](https://downloads.chef.io/tools/habitat). Already I built a sample application following offcial chef tutorials and exported it as docker image. You can see the execution here. I am looking forward to know more about the benifits of [Chef Habitat](https://downloads.chef.io/tools/habitat).
   4. Build CI/CD Pipelines in AWS/Azure and explore the world of Cloud Ops. I am consistantly self learning and you can find my CI/CD pipeline deployment over Azure project [here](https://github.com/arunprakashpj/Deploying-CICD-Pipeline-in-Azure). Looking forward to keep the momentum.
-  5. List Goes On....
+  5. List Goes On...
         
         
 
