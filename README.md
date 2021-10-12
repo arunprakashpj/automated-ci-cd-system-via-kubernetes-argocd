@@ -256,11 +256,12 @@ Know more about the integration from [here](https://slack.com/intl/en-se/help/ar
   This project targets the cloud native environment where CI/CD assitance will be a big boosting factor. Kubernetes is used in the project to enable scalability. Also Helm charts are used in this project to make the kubernetes configuration even more simple. Chef Inspec is an interesting addition to enable infrastructure configuration testing/ security complaince testing.
   
   ### What next
-  1. Explore the application of [Prometheus](https://prometheus.io/) for monitering and [Grafana](https://grafana.com/) for Observability. 
-  2. Explore [polaris](https://github.com/FairwindsOps/polaris) to ensure that Kubernetes pods and controllers are configured properly utlizing best practices.
-  3. Explore [Chef Habitat](https://downloads.chef.io/tools/habitat). Already I built a sample application following offcial chef tutorials and exported it as docker image. You can see the execution [here](https://github.com/arunprakashpj/AutomateForGood/tree/main/export-docker-img-from-habitat). I am looking forward to know more about the benifits of [Chef Habitat](https://downloads.chef.io/tools/habitat).
-  4. Build CI/CD Pipelines in AWS/Azure and explore the world of Cloud Ops. I am consistantly self learning and you can find my CI/CD pipeline deployment over Azure project [here](https://github.com/arunprakashpj/Deploying-CICD-Pipeline-in-Azure). Looking forward to keep the momentum.
-  5. List Goes On...
+  1. Explore the application of  [chef automate](https://www.chef.io/products/chef-automate) in application, security and infra automation.  
+  2. Explore application of [Prometheus](https://prometheus.io/) for monitering and [Grafana](https://grafana.com/) , for Observability. 
+  3. Explore [polaris](https://github.com/FairwindsOps/polaris) to ensure that Kubernetes pods and controllers are configured properly utlizing best practices.
+  4. Explore [Chef Habitat](https://downloads.chef.io/tools/habitat). Already I built a sample application following offcial chef tutorials and exported it as docker image. You can see the execution [here](https://github.com/arunprakashpj/AutomateForGood/tree/main/export-docker-img-from-habitat). I am looking forward to know more about the benifits of [Chef Habitat](https://downloads.chef.io/tools/habitat).
+  5. Build CI/CD Pipelines in AWS/Azure and explore the world of Cloud Ops. I am consistantly self learning and you can find my CI/CD pipeline deployment over Azure project [here](https://github.com/arunprakashpj/Deploying-CICD-Pipeline-in-Azure). Looking forward to keep the momentum.
+  6. List Goes On...
        
   ## Demo 
 
