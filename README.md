@@ -197,7 +197,9 @@ Know more about the integration from [here](https://slack.com/intl/en-se/help/ar
   
   ## Fig 10 : ArgoCD Install and Start
   ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/argocd-install.PNG)
+  ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/argo-port-yaml.PNG)
   ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/argocd-run.PNG)
+  
   
   ## Fig 11 : ArgoCD Front Page
   ![Screenshot](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/argo-login-page.PNG)
