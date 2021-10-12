@@ -232,7 +232,7 @@ Know more about the integration from [here](https://slack.com/intl/en-se/help/ar
    3.  Execute test on docker container
    4.  Execute a profile targetting AWS/Azure Environment
    5.  Make configuration verification like we did for Kubernetes 
-   6.  More usecases [here](https://github.com/inspec/inspec/)
+   6.  More usecases [here](https://github.com/inspec/inspec/).
        
    ### Extended Use cases of Chef Habitat
    1. [Chef Habitat](https://downloads.chef.io/tools/habitat) Artificats
