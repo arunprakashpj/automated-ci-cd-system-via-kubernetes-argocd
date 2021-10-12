@@ -262,4 +262,4 @@ Know more about the integration from [here](https://slack.com/intl/en-se/help/ar
        
   ## Demo 
 
-  [![Demo](https://github.com/arunprakashpj/Deploying-CICD-Pipeline-in-Azure/blob/main/Screenshots/clickhere.png)](https://youtube.com)
+  [![Demo](https://github.com/arunprakashpj/AutomateForGood/blob/main/screenshots/youtube-logo.gif)](https://www.youtube.com/watch?v=lktBOE1MJ7Q)
