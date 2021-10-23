@@ -123,6 +123,8 @@ The Logs have been enabled for the project.
      - Execute ``kubectl apply -f namespace.yaml``.
      - Execute ``kubectl apply -f service.yaml``
      - Execute ``kubectl apply -f deploy.yaml`` 
+     - And its Done !!
+     - Alternatively, you can use [chef cookbooks](https://supermarket.chef.io/cookbooks/kubernetes-cluster) for installing and setting up kubernetes cluster. 
 
 4. Helm Charts Templating
      - The aim of this step is to parameterize the kubernetes manifests.
@@ -257,13 +259,14 @@ Know more about the integration from [here](https://slack.com/intl/en-se/help/ar
   
   ### What next
   1. Add more [Chef InSpec](https://docs.chef.io/inspec/install/) Testcases to completely test/ audit the applications and infrastructure. 
-  2. Configure indepth log levels to the application to enable easy debugging.
-  3. Explore application of [Prometheus](https://prometheus.io/) for monitoring  and [Grafana](https://grafana.com/), for Observability. 
-  4. Explore [Polaris](https://github.com/FairwindsOps/polaris) to ensure that Kubernetes pods and controllers are configured properly utilizing  best practices.
-  5. Explore more about the real-time use cases of [Chef Habitat](https://downloads.chef.io/tools/habitat). Already I experimented with the usage of chef habitat by building the artifacts of a sample application from scaffoldings and exported it as a docker image. You can see the execution [here](https://github.com/arunprakashpj/AutomateForGood/tree/main/export-docker-img-from-habitat).  am looking forward to knowing more about the real-time use cases [Chef Habitat](https://downloads.chef.io/tools/habitat).
-  6. Build CI/CD Pipelines in AWS/Azure and explore the world of Cloud Ops. I am consistently self-learning and you can find my CI/CD pipeline deployment over the Azure project [here](https://github.com/arunprakashpj/Deploying-CICD-Pipeline-in-Azure). Looking forward to keeping  the momentum.
-  7. Explore the application of  [chef automate](https://www.chef.io/products/chef-automate) in application, security, and infra automation. 
-  8. List Goes On...
+  2. Utlize [chef cookbooks](https://supermarket.chef.io/cookbooks/kubernetes-cluster) for installing and setting up kubernetes cluster.
+  3. Configure indepth log levels to the application to enable easy debugging.
+  4. Explore application of [Prometheus](https://prometheus.io/) for monitoring  and [Grafana](https://grafana.com/), for Observability. 
+  5. Explore [Polaris](https://github.com/FairwindsOps/polaris) to ensure that Kubernetes pods and controllers are configured properly utilizing  best practices.
+  6. Explore more about the real-time use cases of [Chef Habitat](https://downloads.chef.io/tools/habitat). Already I experimented with the usage of chef habitat by building the artifacts of a sample application from scaffoldings and exported it as a docker image. You can see the execution [here](https://github.com/arunprakashpj/AutomateForGood/tree/main/export-docker-img-from-habitat).  am looking forward to knowing more about the real-time use cases [Chef Habitat](https://downloads.chef.io/tools/habitat).
+  7. Build CI/CD Pipelines in AWS/Azure and explore the world of Cloud Ops. I am consistently self-learning and you can find my CI/CD pipeline deployment over the Azure project [here](https://github.com/arunprakashpj/Deploying-CICD-Pipeline-in-Azure). Looking forward to keeping  the momentum.
+  8. Explore the application of  [chef automate](https://www.chef.io/products/chef-automate) in application, security, and infra automation. 
+  9. List Goes On...
        
   ## Demo 
 
